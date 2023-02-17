@@ -1,0 +1,10 @@
+html{
+	font-family:Helvetica;
+	cursor:url('cursor\\gif files\\gaylence flow.gif'), auto;
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+

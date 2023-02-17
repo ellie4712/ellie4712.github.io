@@ -1,0 +1,24 @@
+﻿[Arrow]
+Path=Gaylence Flow.ani
+
+[Crosshair]
+Path=Gaylence Precision Pinwheel.ani
+
+[No]
+Path=Gaylence Glitch Error.ani
+
+[Hand]
+Path=Gaylence Link.ani
+
+[NWPen]
+Path=Gaylence Pen.ani
+
+[SizeAll]
+Path=Gaylence Move.ani
+
+[SizeNS]
+Path=Gaylence Vertical.ani
+
+[SizeWE]
+Path=Gaylence Horizontal.ani
+

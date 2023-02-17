@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-
+<!-- TODO: move js to separate file probably -->
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css">
+		<script>
+		if ('registerElement' in document
+		&& 'createShadowRoot' in HTMLElement.prototype
+		&& 'import' in document.createElement('link')
+		&& 'content' in document.createElement('template')) {
+		// We're using a browser with native WC support!
+		} else {
+		document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/platform.js"><\/script>')
+		}
+		</script>
+		<script>
+    function handleLoad(e) {
+    console.log('Loaded import: ' + e.target.href);
+    }
+    function handleError(e) {
+    console.log('Error loading import: ' + e.target.href);
+    }
+	</script>
+	<link rel="import" href="modules\\x-gif\\dist\\x-gif.html" onload="handleLoad(event)" onerror="handleError(event)">
 	</head>
 	<body>
 		<h1>BIG PENISH</h1>
 		<p>Hey this is a new paragraph</p>	
+		<x-gif src="cursor\\gif files\\gaylence normal.gif"></x-gif>
+		<img src="cursor\\gif files\\gaylence normal.gif"/>
 	</body>
 </html>
